@@ -24,9 +24,9 @@ import random
 def ruleta ():
     tiros = 0
     vive = True
-    while tiros != 8 and vive == True :
+    while tiros != 7 and vive == True :
         tiros += 1
-        tiroya = random.randint(0,8)
+        tiroya = random.randint(0,7)
         if tiroya == 0 :
             print ("Estas muerto")
             vivo = False
