@@ -5,7 +5,12 @@ def non (num):
 non (4)
 print (not non)
 
-# 2 nose le entedí
+def oddbit(num):
+    x = 1
+    y = int(num) & a
+    if b == 1:
+        return True
+    return False
 
 # 3 no lo pude hacer
 def mayus (frase):
@@ -15,7 +20,6 @@ def mayus (frase):
     return framayu
 print (mayus)
 
-#nose que valor poner
 import random
 def ruleta ():
     tiros = 0
@@ -50,6 +54,37 @@ def cpus ():
         print ( "Tu compu es chida")
 
 
+#En este problema en particular me ayudaron porque no me sali y me pasaron el un link y me ayudaron
+import smtplib
+import socket
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
-        
+def sendmail():
+    dedir = "omegonza26@gmail.com"
+    adir = "rontiveros@itesm.mx"
+    msg = MIMEMultipart()
+    msg['From'] = fromaddr
+    msg['To'] = toaddr
+    msg['Subject'] = "Tarea 5 ejercicio 6"
+    texto = "Mensaje enviado desde " + os.environ['COMPUTERNAME']
+    msg.attach(MIMEText(body, 'plain'))
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.ehlo()
+    server.starttls()
+    server.ehlo()
+    server.login("omegonza26@gmail.com", "escuela") 
+    text = msg.as_string()
+    server.sendmail(dedir, adir, texto)
+sendmail()
+print ("Enviado)
+
+#A veces falla nose porque
+import tkinter
+def selectfile():
+    tkinter.Tk().withdraw()
+    return (tkinter.filedialog.askopenfilename())
+
+print(eval(input("Escribe una operación")))
+
     
