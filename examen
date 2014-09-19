@@ -1,0 +1,20 @@
+from  tkinter import *
+root=Tk()
+root.filename =  filedialog.askopenfilename()
+print (root.filename)
+
+weight = float (input ("peso"))
+height = float (input ("altura"))
+bmi = weight/(height**2)
+bmi = round(bmi,10)
+print(bmi)
+
+    
+vari = 2.7
+vari2 = round (vari)
+vari3 = int (vari2)
+num1 = float(input ( "Escribe un numero que se sume con el otro"))
+sum1 = (num1 + vari3)
+print (vari2)
+print (sum1)
+
