@@ -79,11 +79,11 @@ def sendmail():
 sendmail()
 print ("Enviado)
 
-#A veces falla nose porque
-import tkinter
-def selectfile():
-    tkinter.Tk().withdraw()
-    return (tkinter.filedialog.askopenfilename())
+#En este tambien me ayudaron pero no siempre jala
+from  tkinter import *
+root=Tk()
+root.filename =  filedialog.askopenfilename()
+print (root.filename)
 
 print(eval(input("Escribe una operación")))
 
